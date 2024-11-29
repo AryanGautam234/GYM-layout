@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM Fitness</title>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link rel="stylesheet" href="style.css">
+<style>
+    /* CSS Reset */
+    body {
+        /* font-family: "Sofia", sans-serif; */
+        color: aliceblue;
+        margin: 0px;
+        padding: 0px;
+        background: url(gym.jpg)
+    }
+
+    .left {
+        font-family: "Sofia", sans-serif;
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        /* border: 2px solid red; */
+    }
+
+    .mid {
+        font-family: "Sofia", sans-serif;
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+        /* border: 2px solid red; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: aliceblue;
+        text-decoration: none;
+        padding: 24px 23px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .left img {
+        width: 150px;
+        margin-left: 10px;
+        filter: invert(100%)
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 28px;
+        text-decoration: underline;
+        text-shadow: 2px 2px 9px red;
+    }
+
+    .btn {
+        font-family: "Sofia", serif;
+        margin: 0px 9px;
+        color: white;
+        background: rgba(128, 128, 128, 0.742);
+        padding: 4px 14px;
+        /* border: 1px solid black; */
+        border-radius: 15px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        /* background: #000; */
+    }
+
+    .container {
+        margin: 208px 161px;
+        padding: 59px 48px;
+        width: 28%;
+        border-radius: 50px;
+    }
+
+    .form {
+        /* border: 2px solid red; */
+        font-size: 28px;
+        margin: -277px 213px;
+        padding: 16px 53px;
+        width: 28%;
+
+    }
+
+    #text {
+        height: 25px;
+        /* box-shadow: 4px 4px 8px red; */
+    }
+
+    #text2 {
+        height: 25px;
+        /* box-shadow: 4px 4px 8px red; */
+    }
+
+    #text3 {
+        height: 25px;
+        /* box-shadow: 4px 4px 8px red; */
+    }
+
+    #button {
+        display: block;
+        margin: 38px 45px;
+        height: 25px;
+        border-radius: 10px;
+        width: 80px;
+    }
+
+    #button:hover {
+        background: #8b58588f;
+    }
+
+    label {
+        text-shadow: 5px 5px 5px blue;
+    }
+
+    h1 {
+        text-shadow: 2px 2px 2px red;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="fitness.jpg" alt="">
+            <div>A.G FITNESS</div>
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculater</a></li>
+                <li><a href="#">Contact us</a></li>
+
+            </ul>
+        </div>
+        <!-- right box for button -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of delhi now </h1>
+    </div>
+    <form class="form">
+        <label for="text">Name:</label>
+        <br>
+        <input type="text" name="text name" id="text">
+        <br>
+        <br>
+        <label for="text2">Email:</label>
+        <br>
+        <input type="text" name="email" id="text2">
+        <br>
+        <br>
+        <label for="text3">Phone:</label>
+        <br>
+        <input type="text" name="phone number" id="text3">
+        <br>
+        <button id="button">sumbit</button>
+    </form>
+
+</body>
+
+</html>
